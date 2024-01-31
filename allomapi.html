@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Allo MApi</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+  
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: 900px;
+  position: relative;
+  padding-top: 66.6666666667%;
+
+}
+@media screen and (min-width: 600px) {
+  .gallery {
+    padding-top: 400px;
+  }
+  
+  
+}
+.gallery__img {
+  position: absolute;
+  top: 0;
+  left:10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  
+
+
+ 
+}
+.gallery__thumb {
+  padding-top: 190px;
+  margin-top: -800px;
+  margin: 5px;
+  display: block;
+  
+}
+.gallery__thumb img {
+    height: 50px;
+    width:100px;
+}
+.gallery__selector {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.gallery__selector:checked + .gallery__img {
+  opacity: 1;
+}
+.gallery__selector:checked ~ .gallery__thumb > img {
+  box-shadow: 0 0 0 3px #0be2f6;
+}
+
+</style>
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top" data-navbar-on-scroll="data-navbar-on-scroll">
+            <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/l.png" height="31" alt="logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+              <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            
+              </div>
+            </div>
+          </nav>
+     
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="manager">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6"><img class="img-fluid" src="assets/img/ipres/deve.jpg" alt=""  style="width:100%; height:100%;"/></div>
+            <div class="col-lg-6">
+              <h5 class="text-secondary">About</h5>
+              <p class="fs-7 fw-bold mb-2">Allo mapi palteform</p>
+              <p class="mb-4 fw-medium text-secondary">
+platform de La gestion des devises et le contrôle par GPS
+                <br />
+              </p>
+              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/manager/tick.png" width="35" alt="tick" />
+                <p class="fw-medium mb-0 text-secondary">front-end: reactjs , axios, tailwind ..ect  </p>
+              </div>
+              <div class="d-flex align-items-center mb-3"> <img class="me-sm-4 me-2" src="assets/img/manager/tick.png" width="35" alt="tick" />
+                <p class="fw-medium mb-0 text-secondary">back-end:  api in php  </p>
+              </div>
+              <div class="d-flex align-items-center mb-3"><img class="me-sm-4 me-2" src="assets/img/manager/tick.png" width="35" alt="tick" />
+                <p class="fw-medium mb-0 text-secondary"> MYSQL </p>
+              </div>
+            <a href="https://ipresences.com/"  ><button class="btn btn-warning fw-medium py-1">Live preview</button> </a>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-secondary">Appratic images</h5>
+            <p class="fs-7 fw-bold mb-2">   </p>
+            </div>
+<section class="gallery">
+    <div class="gallery__item">
+      <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/1.PNG" alt=""/>
+      <label for="img-1" class="gallery__thumb"><img src="assets/img/allomapi/1.PNG" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+      <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/2.PNG" alt=""/>
+      <label for="img-2" class="gallery__thumb"><img src="assets/img/allomapi/2.PNG" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+      <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/3.PNG" alt="" />
+      <label for="img-3" class="gallery__thumb"><img src="assets/img/allomapi/3.PNG" alt="" /></label>
+    </div>
+    <div class="gallery__item">
+      <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/4.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/4.PNG" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+      <input type="radio" id="img-5" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/5.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/5.PNG" alt=""/></label>
+    </div>
+    
+   
+         <div class="gallery__item">
+      <input type="radio" id="img-6" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/6.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/6.PNG" alt=""/></label>
+    </div>
+         <div class="gallery__item">
+      <input type="radio" id="img-7" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/7.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/7.PNG" alt=""/></label>
+    </div>
+          <div class="gallery__item">
+      <input type="radio" id="img-8" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/8.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/8.PNG" alt=""/></label>
+    </div>
+   <div class="gallery__item">
+      <input type="radio" id="img-9" name="gallery" class="gallery__selector"/>
+      <img class="gallery__img" src="assets/img/allomapi/9.PNG" alt=""/>
+      <label for="img-4" class="gallery__thumb"><img src="assets/img/allomapi/9.PNG" alt=""/></label>
+    </div>
+  </section>
+  
+
+</div></div>
+
+     
+
+     <!-- <section> close ============================-->
+      <!-- ============================================-->
+      <section class="pb-2 pb-lg-5">
+
+        <div class="container">
+          <div class="row border-top border-top-secondary pt-7">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-6 mb-lg-0 mb-sm-2 order-1 order-md-1 order-lg-1"><img class="mb-4" src="assets/img/l.png" width="184" alt="" /></div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-3 order-md-3 order-lg-2">
+              <p class="fs-2 mb-lg-4">Quick Links</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="https://chosengroup-dz.com/SIIA/">SIIA event Web site</a></li>
+
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="https://chosengroup-dz.com/forum/">FIPI event Web site</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="https://chosengroup-dz.com"> Chosen group website</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="fast_food.html">Fast food website</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="https://ipresences.com/">Présence Int'l website</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 order-4 order-md-4 order-lg-3">
+              <p class="fs-2 mb-lg-4">Quick Links</p>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="https://acehc.org/">The Algerian club of excellence website</a></li>
+
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="yana.html">You are not alone mobile application</a></li>
+                <li class="mb-1"><a class="link-900 text-secondary text-decoration-none" href="library.html">Library management</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0 order-2 order-md-2 order-lg-4">
+              <p class="fs-2 mb-lg-4">
+                Contact informations</p>
+              <p>zahra.tiri@univ-constantine2.dz</p>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+
+
+
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+    
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
